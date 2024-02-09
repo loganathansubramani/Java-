@@ -1,0 +1,16 @@
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	char a=sc.nextLine().charAt(0);
+	if(a=='w'||a=='W'){
+	    System.out.print("whatsapp");
+	}else if(a=='t'||a=='T'){
+	    System.out.print("twitter");
+	}else if(a=='f'||a=='F'){
+	    System.out.print("facebook");
+	}else{
+	    System.out.print("undefined");
+	}
+	}
+}
