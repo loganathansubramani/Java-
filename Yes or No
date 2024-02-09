@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    char a=sc.nextLine().charAt(0);
+    if(a=='y'||a=='Y'){
+        System.out.print("yes");
+    }else if(a=='N'||a=='n'){
+        System.out.print("no");
+    }else{
+        System.out.print("invalid");
+    }
+	}
+}
