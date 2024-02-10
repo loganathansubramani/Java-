@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	char a=sc.nextLine().charAt(0);
+	if(a=='r'||a=='R'){
+	    System.out.print("RED");
+	}
+	else if(a=='g'||a=='G'){
+	    System.out.print("GREEN");
+	}else if(a=='b'||a=='B'){
+	    System.out.print("BLUE");
+	}else{
+	    System.out.print("UNDEFINED");
+	}
+	}
+}
