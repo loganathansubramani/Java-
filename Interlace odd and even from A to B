@@ -1,0 +1,48 @@
+import java.util.*;
+public class Hello{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int oddctr,evenctr;
+        if(b%2==0){
+            evenctr=b;
+        }else{
+            evenctr=b-1;
+        }
+        if(a%2==1){
+            oddctr=a;
+        }
+        else{
+            oddctr=a+1;
+        }
+        int count=0;
+        int tcount=b-a+1;
+        while(count<tcount){
+            if(a%2==0&&b%2==0){
+                if(evenctr>=a){
+                    System.out.print(evenctr + " ");
+                    count++;
+                    evenctr-=2;
+                }
+                if(oddctr<=b){
+                    System.out.print(oddctr + " ");
+                    count++;
+                    oddctr+=2;
+                }
+            }
+            else{
+                if(oddctr<=b){
+                    System.out.print(oddctr + " ");
+                    count++;
+                    oddctr+=2;
+                }
+                if(evenctr>=a){
+                    System.out.print(evenctr + " ");
+                    count++;
+                    evenctr-=2;
+                }
+            }
+        }
+    }
+}
