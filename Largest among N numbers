@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int count=0;
+    int larg=0;
+    int input=0;
+    while(count<a){
+        input=sc.nextInt();
+        if(input>larg){
+            larg=input;
+        }count++;
+    }
+    System.out.print(larg);
+	}
+}
