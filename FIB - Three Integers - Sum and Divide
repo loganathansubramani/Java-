@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Hello {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        String[] b = a.split(":");
+        int A = Integer.parseInt(b[0].trim()); // added trim() to remove leading/trailing whitespaces
+        int B = Integer.parseInt(b[1].trim()); // added trim() to remove leading/trailing whitespaces
+        int C = Integer.parseInt(b[2].trim()); // added trim() to remove leading/trailing whitespaces
+        System.out.print((A + B) / C);
+    }
+}
