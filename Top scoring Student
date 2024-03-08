@@ -1,0 +1,20 @@
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    sc.nextLine();
+    String name="";
+    int sum=0;
+    while(a-->0){
+        String c=sc.nextLine();
+        String[] d=c.split(":");
+        int tot=Integer.parseInt(d[1])+Integer.parseInt(d[2])+Integer.parseInt(d[3]);
+        if(tot>sum){
+            sum=tot;
+            name=d[0];
+        }
+    }
+    System.out.print(name);
+	}
+}
