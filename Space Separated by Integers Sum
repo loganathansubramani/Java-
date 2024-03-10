@@ -1,0 +1,14 @@
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	String[] str=sc.nextLine().split(" ");
+	int len=str.length;
+	int sum=0;
+	while(len-->0){
+	    sum+=Integer.parseInt(str[len]);
+	}
+	System.out.print(sum);
+	}
+}
+}
