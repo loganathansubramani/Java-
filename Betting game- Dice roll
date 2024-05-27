@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String[] arr=sc.nextLine().split(" ");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int loss=0;//even no
+        int gain=0;//odd no
+        for(String str:arr){
+            int n=Integer.parseInt(str);
+            if(n%2==0)loss+=y;
+            else gain+=x;
+        }
+        System.out.print(gain-loss);
+    }
+}
